@@ -84,3 +84,38 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
+/* Media Queries para Responsividad */
+
+/* Móviles (pantallas pequeñas) */
+@media (max-width: 768px) {
+    .logo {
+        max-width: 150px;  /* Reducir tamaño de imagen en móviles */
+    }
+
+    .social-media {
+        flex-direction: column;  /* Apilar los íconos verticalmente */
+        margin-top: 20px;
+    }
+
+    .social-media a {
+        margin: 10px 0;  /* Añadir espaciado entre los íconos */
+        font-size: 16px; /* Ajustar tamaño de fuente en móviles */
+    }
+}
+
+/* Tablets (pantallas medianas) */
+@media (max-width: 1024px) {
+    .logo {
+        max-width: 250px;  /* Ajustar tamaño de la imagen en tabletas */
+    }
+
+    .social-media {
+        flex-direction: row; /* Asegurar que los íconos estén alineados en una fila */
+        margin-top: 20px;
+    }
+
+    .social-media a {
+        font-size: 18px; /* Ajustar tamaño de fuente en tabletas */
+    }
+}
